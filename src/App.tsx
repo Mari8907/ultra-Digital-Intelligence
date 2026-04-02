@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 flex items-center justify-center overflow-hidden rounded-lg border border-white/10 glass-panel">
             <img 
-              src="https://res.cloudinary.com/dgwuxmtpc/image/upload/v1711253311/udi_logo_placeholder.png" 
+              src='/favicon.png'
               alt="UDI Logo" 
               className="w-full h-full object-cover"
               onError={(e) => {
