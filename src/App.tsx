@@ -115,11 +115,16 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <button className="w-full md:w-auto px-8 py-4 bg-udi-cyan text-udi-dark font-bold rounded-full hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-2 group">
+            <button onClick={() => window.open('https://api.whatsapp.com/send/?phone=5543999368418&text=&type=phone_number&app_absent=0', '_blank')} className="w-full md:w-auto px-8 py-4 bg-udi-cyan text-udi-dark font-bold rounded-full hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-2 group">
               Agendar Consultoría Estratégica
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="w-full md:w-auto px-8 py-4 glass-panel rounded-full hover:bg-white/10 transition-all duration-300">
+            <button onClick={() => {
+              const element = document.getElementById('services');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }} className="w-full md:w-auto px-8 py-4 glass-panel rounded-full hover:bg-white/10 transition-all duration-300">
               Ver Soluciones
             </button>
           </div>
@@ -186,20 +191,16 @@ const About = () => {
             <div className="aspect-square rounded-2xl overflow-hidden glass-panel p-2">
               <div className="w-full h-full rounded-xl overflow-hidden relative">
                 <img 
-                  src="https://picsum.photos/seed/tech/800/800" 
+                  src="../public/img1.jpeg" 
                   alt="UDI Technology" 
                   className="w-full h-full object-cover opacity-50"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-udi-cyan/10 mix-blend-overlay"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Cpu className="w-24 h-24 text-udi-cyan animate-pulse" />
-                </div>
+                
               </div>
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-udi-cyan/20 blur-3xl rounded-full"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-udi-cyan/20 blur-3xl rounded-full"></div>
           </motion.div>
         </div>
       </div>
@@ -438,7 +439,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-udi-cyan rounded-lg flex items-center justify-center overflow-hidden">
-                <img src="https://via.placeholder.com/100?text=UDI" alt="UDI" className="w-full h-full object-cover" />
+                <img src="../public/favicon.png" alt="UDI" className="w-full h-full object-cover" />
               </div>
               <span className="text-xl font-display font-bold tracking-tighter">UDI</span>
             </div>
@@ -450,10 +451,10 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <h4 className="text-sm font-bold uppercase tracking-widest text-udi-cyan">Contacto Directo</h4>
             <div className="flex flex-col gap-3 text-sm text-white/60">
-              <a href="tel:+5543999368418" className="hover:text-white transition-colors flex items-center gap-2">
+              <a href="https://api.whatsapp.com/send/?phone=5543999368418&text&type=phone_number&app_absent=0" className="hover:text-white transition-colors flex items-center gap-2">
                 <span className="text-base">🇧🇷</span> +55 43 99936-8418
               </a>
-              <a href="tel:+543764889702" className="hover:text-white transition-colors flex items-center gap-2">
+              <a href="https://api.whatsapp.com/send/?phone=543764889702&text&type=phone_number&app_absent=0" className="hover:text-white transition-colors flex items-center gap-2">
                 <span className="text-base">🇦🇷</span> +54 376 488-9702
               </a>
             </div>
