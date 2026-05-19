@@ -191,7 +191,7 @@ const About = () => {
             <div className="aspect-square rounded-2xl overflow-hidden glass-panel p-2">
               <div className="w-full h-full rounded-xl overflow-hidden relative">
                 <img 
-                  src="../public/img1.jpeg" 
+                  src="/img1.jpeg" 
                   alt="UDI Technology" 
                   className="w-full h-full object-cover opacity-50"
                   referrerPolicy="no-referrer"
@@ -439,7 +439,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-udi-cyan rounded-lg flex items-center justify-center overflow-hidden">
-                <img src="../public/favicon.png" alt="UDI" className="w-full h-full object-cover" />
+                <img src="/favicon.png" alt="UDI" className="w-full h-full object-cover" />
               </div>
               <span className="text-xl font-display font-bold tracking-tighter">UDI</span>
             </div>
